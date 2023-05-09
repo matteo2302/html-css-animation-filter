@@ -120,6 +120,32 @@
   text-align: center;
   text-decoration: none;
 }
+.ex-12-button:hover .ex-12-top-white {
+  animation: slide 1s alternate;
+}
+@keyframes slide {
+  from {
+    top: -10px;
+    left: 10%;
+  }
+  to {
+    top: -10px;
+    left: 60%;
+  }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: slide-down 1s alternate;
+}
+@keyframes slide-down {
+  from {
+    bottom: -10px;
+    right: 20%;
+  }
+  to {
+    bottom: -10px;
+    right: 60%;
+  }
+}
 .ex-12-top-white,
 .ex-13-top-white {
   position: absolute;
@@ -137,4 +163,42 @@
   background: #f5f5f5;
   width: 60px;
   height: 20px;
+}
+.ex-13-button:hover .ex-13-top-white {
+  animation: slide-13 1s alternate;
+}
+@keyframes slide-13 {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+  25% {
+    top: -10px;
+    left: 60%;
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: slide-down-13 1s alternate;
+}
+@keyframes slide-down-13 {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+  25% {
+    top: -10px;
+    left: 60%;
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+  }
 }
